@@ -1,6 +1,6 @@
 ---
 title: (코테) 시뮬레이션 문제 5가지
-date: 2023-09-20 00:10:11 +/-TTTT
+date: 2023-09-26 19:40:11 +/-TTTT
 categories: [TIL, CodePractice]
 tags: [python, codepractice, algorithm]
 math: true
