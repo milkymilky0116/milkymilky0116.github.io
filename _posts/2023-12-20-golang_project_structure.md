@@ -18,7 +18,9 @@ Golang과 Golang의 여러 웹 라이브러리들 (gin, echo, fiber, 혹은 기�
 
 위에서도 언급했듯 Golang의 프로젝트 설계에는 정답이 없다. 하지만 많은 Golang 개발자들이 따라가는 관습적인 큰 틀은 존재한다.
 
-https://github.com/golang-standards/project-layout
+![스크린샷 2023-12-20 오후 7 26 16](https://github.com/milkymilky0116/milkymilky0116.github.io/assets/84823612/21cfc519-923c-4415-8bfd-d94fdc1dd4bf)
+
+[project-layout](https://github.com/golang-standards/project-layout)
 
 스타가 무려 43.5k나 찍혀있는 이 레포지토리는 많은 Golang 개발자들, 혹은 서적이나 튜토리얼에서 따라가고 있는 일반적인 구조이고 프로젝트 설계에 어려움을 겪고 있다면 충분히 참고 할만한 레포지토리이다.
 
