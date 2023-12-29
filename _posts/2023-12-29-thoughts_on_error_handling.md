@@ -267,7 +267,7 @@ func main() int {
   
 단순하게 string을 JSON으로 변환해 주는 함수에 대해서 생각해 보자.
 
-```Typescript
+```typescript
 JSON.parse('{"id":1, "name":"milky"}');
 ```
 
