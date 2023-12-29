@@ -334,7 +334,7 @@ fn main() {
 
 배워본 적은 없지만, Zig 라는 프로그래밍 언어에서는 `if err != nil` 을 `try` 라는 키워드로 대체해서 가독성을 높였다고 한다.
 
-```Zig
+```zig
 pub fn main() !void {  
 	const input = -10;  
 	const number = try maybeError(input);  
