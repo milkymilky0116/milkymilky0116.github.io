@@ -36,7 +36,7 @@ mermaid: true # TAG names should always be lowercase
 
 _Application.pkl_
 
-```Pkl
+```
 module Application
 
 /// hostname은 서버가 응답하는 주소를 나타냅니다.
@@ -74,7 +74,7 @@ typealias Environment = "dev"|"qa"|"prod"
 
 _localhost.pkl_
 
-```Pkl
+```
 amends "Application.pkl"
 
 hostname = "localhost"
@@ -94,7 +94,7 @@ database {
 
 여기에서 수정을 가해서 같은 데이터에 기반하는 여러 변형들을 만들 수 있습니다. 예로 들어, 우리가 4개의 데이터베이스를 예방책으로 로컬에 돌리길 원한다고 가정해봅시다. for generator를 통해 4개의 변형을 만들 수 있고, 같은 베이스의 db를 사용하되 다른 포트에 할당하게끔 할 수 있습니다.
 
-```Pkl
+```
 import "Application.pkl"
 
 hidden db: Application.Database = new {
@@ -120,28 +120,28 @@ $ export DATABASE_PASSWORD=hunter2
 $ pkl eval --format yaml sidecars.pkl
 ```
 
-```YAML
+```yaml
 sidecars:
-- username: admin
-  password: hunter2
-  host: localhost
-  port: 6000
-  dbName: myapp
-- username: admin
-  password: hunter2
-  host: localhost
-  port: 6001
-  dbName: myapp
-- username: admin
-  password: hunter2
-  host: localhost
-  port: 6002
-  dbName: myapp
-- username: admin
-  password: hunter2
-  host: localhost
-  port: 6003
-  dbName: myapp
+  - username: admin
+    password: hunter2
+    host: localhost
+    port: 6000
+    dbName: myapp
+  - username: admin
+    password: hunter2
+    host: localhost
+    port: 6001
+    dbName: myapp
+  - username: admin
+    password: hunter2
+    host: localhost
+    port: 6002
+    dbName: myapp
+  - username: admin
+    password: hunter2
+    host: localhost
+    port: 6003
+    dbName: myapp
 ```
 
 # 기본 제공 유효성 검사 (Built-in validation) 🧐
@@ -158,7 +158,7 @@ Pkl에서, 검증은 타입 어노테이션으로 쉽게 달성이 가능합니�
 
 _Person.pkl_
 
-```Pkl
+```
 module Person
 
 name: String(!isEmpty)
@@ -172,7 +172,7 @@ zipCode: String(matches(Regex("\\d{5}")))
 
 _alessandra.pkl_
 
-```Pkl
+```
 amends "Person.pkl"
 
 name = "Alessandra"
@@ -217,7 +217,7 @@ Pkl을 패키지를 배포하고, 프로젝트의 의존성으로서 불러올 �
 
 패키지는 절대경로 URI를 통해 불러 올 수 있습니다.
 
-```Pkl
+```
 import "package://pkg.pkl-lang.org/pkl-pantry/pkl.toml@1.0.0#/toml.pkl"
 
 output {
@@ -229,7 +229,7 @@ output {
 
 _PklProject_
 
-```Pkl
+```
 amends "pkl:Project"
 
 dependencies {
@@ -239,7 +239,7 @@ dependencies {
 
 _myconfig.pkl_
 
-```Pkl
+```
 import "@toml/toml.pkl"
 
 output {
