@@ -327,4 +327,4 @@ Python에서는 프레임워크 차원에서 이를 지원하진 않지만 WSGI 
 
 Go를 통해 이를 직접 구현해보는 시간을 가지면서 여러분이 사용하는 프레임워크가 뒤에서 어떤 일을 처리해주고 있는지 잠시 엿보았습니다. 
 
-[예제 소스코드 레포지토리](https://milkymilky0116.github.io/posts/Graceful_Shutdown/)
+[예제 소스코드 레포지토리](https://github.com/milkymilky0116/gracefulshutdown-test)
